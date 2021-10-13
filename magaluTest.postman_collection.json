@@ -1,0 +1,401 @@
+{
+	"info": {
+		"_postman_id": "e34a8da9-e4f6-4dfb-8b2e-ce97397c976a",
+		"name": "magaluTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cliente",
+			"item": [
+				{
+					"name": "incluir cliente api",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBtYWdhbHUuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJ1c3VhcmlvIiwiZXhwIjoxNjM0MDc1NzE4LCJhdXRob3JpdGllcyI6WyJST0xFX1BST0RVVE9GQVZPUklUT19DUklBUiIsIlJPTEVfUFJPRFVUT19BVFVBTElaQVIiLCJST0xFX1BFUk1JU1NBT19MSVNUQVIiLCJST0xFX1BST0RVVE9fTElTVEFSIiwiUk9MRV9VU1VBUklPX0NSSUFSIiwiUk9MRV9QRVJNSVNTQU9VU1VBUklPX0NSSUFSIiwiUk9MRV9QRVJNSVNTQU9fREVMRVRBUiIsIlJPTEVfVVNVQVJJT19ERUxFVEFSIiwiUk9MRV9QUk9EVVRPRkFWT1JJVE9fTElTVEFSIiwiUk9MRV9VU1VBUklPX0xJU1RBUiIsIlJPTEVfQ0xJRU5URV9BVFVBTElaQVIiLCJST0xFX0NMSUVOVEVfTElTVEFSIiwiUk9MRV9QRVJNSVNTQU9fQ1JJQVIiLCJST0xFX0NMSUVOVEVfQ1JJQVIiLCJST0xFX1BFUk1JU1NBT1VTVUFSSU9fQVRVQUxJWkFSIiwiUk9MRV9QUk9EVVRPX0NSSUFSIiwiUk9MRV9VU1VBUklPX0FUVUFMSVpBUiIsIlJPTEVfUEVSTUlTU0FPX0FUVUFMSVpBUiIsIlJPTEVfUFJPRFVUT19ERUxFVEFSIiwiUk9MRV9QRVJNSVNTQU9VU1VBUklPX0RFTEVUQVIiLCJST0xFX0NMSUVOVEVfREVMRVRBUiIsIlJPTEVfUFJPRFVUT0ZBVk9SSVRPX0FUVUFMSVpBUiIsIlJPTEVfUEVSTUlTU0FPVVNVQVJJT19MSVNUQVIiLCJST0xFX1BST0RVVE9GQVZPUklUT19ERUxFVEFSIl0sImp0aSI6ImJhNWVhM2EyLTAzZTYtNDZjOS04NjIxLWZmYTYxOTBkYWU0MSIsImNsaWVudF9pZCI6ImFuZ3VsYXIifQ.GVZLMuHZu0a9T1SJZPB3ZKB4YDv-TBkAlbuWRR5lmHc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idCliente\": 0,\r\n    \"nome\": \"Gil22\",\r\n    \"email\": \"gilialdo2@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cliente_",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente_"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alterar cliente api",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBtYWdhbHUuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJ1c3VhcmlvIiwiZXhwIjoxNjM0MDc1NzE4LCJhdXRob3JpdGllcyI6WyJST0xFX1BST0RVVE9GQVZPUklUT19DUklBUiIsIlJPTEVfUFJPRFVUT19BVFVBTElaQVIiLCJST0xFX1BFUk1JU1NBT19MSVNUQVIiLCJST0xFX1BST0RVVE9fTElTVEFSIiwiUk9MRV9VU1VBUklPX0NSSUFSIiwiUk9MRV9QRVJNSVNTQU9VU1VBUklPX0NSSUFSIiwiUk9MRV9QRVJNSVNTQU9fREVMRVRBUiIsIlJPTEVfVVNVQVJJT19ERUxFVEFSIiwiUk9MRV9QUk9EVVRPRkFWT1JJVE9fTElTVEFSIiwiUk9MRV9VU1VBUklPX0xJU1RBUiIsIlJPTEVfQ0xJRU5URV9BVFVBTElaQVIiLCJST0xFX0NMSUVOVEVfTElTVEFSIiwiUk9MRV9QRVJNSVNTQU9fQ1JJQVIiLCJST0xFX0NMSUVOVEVfQ1JJQVIiLCJST0xFX1BFUk1JU1NBT1VTVUFSSU9fQVRVQUxJWkFSIiwiUk9MRV9QUk9EVVRPX0NSSUFSIiwiUk9MRV9VU1VBUklPX0FUVUFMSVpBUiIsIlJPTEVfUEVSTUlTU0FPX0FUVUFMSVpBUiIsIlJPTEVfUFJPRFVUT19ERUxFVEFSIiwiUk9MRV9QRVJNSVNTQU9VU1VBUklPX0RFTEVUQVIiLCJST0xFX0NMSUVOVEVfREVMRVRBUiIsIlJPTEVfUFJPRFVUT0ZBVk9SSVRPX0FUVUFMSVpBUiIsIlJPTEVfUEVSTUlTU0FPVVNVQVJJT19MSVNUQVIiLCJST0xFX1BST0RVVE9GQVZPUklUT19ERUxFVEFSIl0sImp0aSI6ImJhNWVhM2EyLTAzZTYtNDZjOS04NjIxLWZmYTYxOTBkYWU0MSIsImNsaWVudF9pZCI6ImFuZ3VsYXIifQ.GVZLMuHZu0a9T1SJZPB3ZKB4YDv-TBkAlbuWRR5lmHc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idCliente\": 2,\r\n    \"nome\": \"Gil22\",\r\n    \"email\": \"gilialdo2@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cliente_/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente_",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar cliente api",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBtYWdhbHUuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJ1c3VhcmlvIiwiZXhwIjoxNjM0MDc1NzE4LCJhdXRob3JpdGllcyI6WyJST0xFX1BST0RVVE9GQVZPUklUT19DUklBUiIsIlJPTEVfUFJPRFVUT19BVFVBTElaQVIiLCJST0xFX1BFUk1JU1NBT19MSVNUQVIiLCJST0xFX1BST0RVVE9fTElTVEFSIiwiUk9MRV9VU1VBUklPX0NSSUFSIiwiUk9MRV9QRVJNSVNTQU9VU1VBUklPX0NSSUFSIiwiUk9MRV9QRVJNSVNTQU9fREVMRVRBUiIsIlJPTEVfVVNVQVJJT19ERUxFVEFSIiwiUk9MRV9QUk9EVVRPRkFWT1JJVE9fTElTVEFSIiwiUk9MRV9VU1VBUklPX0xJU1RBUiIsIlJPTEVfQ0xJRU5URV9BVFVBTElaQVIiLCJST0xFX0NMSUVOVEVfTElTVEFSIiwiUk9MRV9QRVJNSVNTQU9fQ1JJQVIiLCJST0xFX0NMSUVOVEVfQ1JJQVIiLCJST0xFX1BFUk1JU1NBT1VTVUFSSU9fQVRVQUxJWkFSIiwiUk9MRV9QUk9EVVRPX0NSSUFSIiwiUk9MRV9VU1VBUklPX0FUVUFMSVpBUiIsIlJPTEVfUEVSTUlTU0FPX0FUVUFMSVpBUiIsIlJPTEVfUFJPRFVUT19ERUxFVEFSIiwiUk9MRV9QRVJNSVNTQU9VU1VBUklPX0RFTEVUQVIiLCJST0xFX0NMSUVOVEVfREVMRVRBUiIsIlJPTEVfUFJPRFVUT0ZBVk9SSVRPX0FUVUFMSVpBUiIsIlJPTEVfUEVSTUlTU0FPVVNVQVJJT19MSVNUQVIiLCJST0xFX1BST0RVVE9GQVZPUklUT19ERUxFVEFSIl0sImp0aSI6ImJhNWVhM2EyLTAzZTYtNDZjOS04NjIxLWZmYTYxOTBkYWU0MSIsImNsaWVudF9pZCI6ImFuZ3VsYXIifQ.GVZLMuHZu0a9T1SJZPB3ZKB4YDv-TBkAlbuWRR5lmHc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cliente_",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente_"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "produtoFavorito",
+			"item": [
+				{
+					"name": "incluir produtoFavorito",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBtYWdhbHUuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJ1c3VhcmlvIiwiZXhwIjoxNjM0MDc4NzY2LCJhdXRob3JpdGllcyI6WyJST0xFX1BST0RVVE9GQVZPUklUT19DUklBUiIsIlJPTEVfUFJPRFVUT19BVFVBTElaQVIiLCJST0xFX1BFUk1JU1NBT19MSVNUQVIiLCJST0xFX1BST0RVVE9fTElTVEFSIiwiUk9MRV9VU1VBUklPX0NSSUFSIiwiUk9MRV9QRVJNSVNTQU9VU1VBUklPX0NSSUFSIiwiUk9MRV9QRVJNSVNTQU9fREVMRVRBUiIsIlJPTEVfVVNVQVJJT19ERUxFVEFSIiwiUk9MRV9QUk9EVVRPRkFWT1JJVE9fTElTVEFSIiwiUk9MRV9VU1VBUklPX0xJU1RBUiIsIlJPTEVfQ0xJRU5URV9BVFVBTElaQVIiLCJST0xFX0NMSUVOVEVfTElTVEFSIiwiUk9MRV9QRVJNSVNTQU9fQ1JJQVIiLCJST0xFX0NMSUVOVEVfQ1JJQVIiLCJST0xFX1BFUk1JU1NBT1VTVUFSSU9fQVRVQUxJWkFSIiwiUk9MRV9QUk9EVVRPX0NSSUFSIiwiUk9MRV9VU1VBUklPX0FUVUFMSVpBUiIsIlJPTEVfUEVSTUlTU0FPX0FUVUFMSVpBUiIsIlJPTEVfUFJPRFVUT19ERUxFVEFSIiwiUk9MRV9QRVJNSVNTQU9VU1VBUklPX0RFTEVUQVIiLCJST0xFX0NMSUVOVEVfREVMRVRBUiIsIlJPTEVfUFJPRFVUT0ZBVk9SSVRPX0FUVUFMSVpBUiIsIlJPTEVfUEVSTUlTU0FPVVNVQVJJT19MSVNUQVIiLCJST0xFX1BST0RVVE9GQVZPUklUT19ERUxFVEFSIl0sImp0aSI6ImFiMjA0MTBkLTE1ZjYtNDYzYS1hNWY4LTQwNzM0MjQxMjY1ZiIsImNsaWVudF9pZCI6ImFuZ3VsYXIifQ.r8dL9UKh_HO4CxYq_mE4g0cmt6rAdec7laqQ8Y8twjY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idProdutoFavorito\": 0,\r\n    \"cliente\": {\r\n        \"idCliente\": 1\r\n    },\r\n    \"idProduto\": \"teste2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/produtoFavorito_",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produtoFavorito_"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alterar produtoFavorito api",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBtYWdhbHUuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJ1c3VhcmlvIiwiZXhwIjoxNjM0MDgwNDg2LCJhdXRob3JpdGllcyI6WyJST0xFX1BST0RVVE9GQVZPUklUT19DUklBUiIsIlJPTEVfUFJPRFVUT19BVFVBTElaQVIiLCJST0xFX1BFUk1JU1NBT19MSVNUQVIiLCJST0xFX1BST0RVVE9fTElTVEFSIiwiUk9MRV9VU1VBUklPX0NSSUFSIiwiUk9MRV9QRVJNSVNTQU9VU1VBUklPX0NSSUFSIiwiUk9MRV9QRVJNSVNTQU9fREVMRVRBUiIsIlJPTEVfVVNVQVJJT19ERUxFVEFSIiwiUk9MRV9QUk9EVVRPRkFWT1JJVE9fTElTVEFSIiwiUk9MRV9VU1VBUklPX0xJU1RBUiIsIlJPTEVfQ0xJRU5URV9BVFVBTElaQVIiLCJST0xFX0NMSUVOVEVfTElTVEFSIiwiUk9MRV9QRVJNSVNTQU9fQ1JJQVIiLCJST0xFX0NMSUVOVEVfQ1JJQVIiLCJST0xFX1BFUk1JU1NBT1VTVUFSSU9fQVRVQUxJWkFSIiwiUk9MRV9QUk9EVVRPX0NSSUFSIiwiUk9MRV9VU1VBUklPX0FUVUFMSVpBUiIsIlJPTEVfUEVSTUlTU0FPX0FUVUFMSVpBUiIsIlJPTEVfUFJPRFVUT19ERUxFVEFSIiwiUk9MRV9QRVJNSVNTQU9VU1VBUklPX0RFTEVUQVIiLCJST0xFX0NMSUVOVEVfREVMRVRBUiIsIlJPTEVfUFJPRFVUT0ZBVk9SSVRPX0FUVUFMSVpBUiIsIlJPTEVfUEVSTUlTU0FPVVNVQVJJT19MSVNUQVIiLCJST0xFX1BST0RVVE9GQVZPUklUT19ERUxFVEFSIl0sImp0aSI6IjYwZTc1NGIzLTY3NjctNDczNi05ZjA0LWVkNWZlOGM5ODNkYiIsImNsaWVudF9pZCI6ImFuZ3VsYXIifQ.3v3w0Iz_aeGDwPogHZXO26mXQla0YQhxMkPMJk8f3os",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idProdutoFavorito\": 2,\r\n    \"cliente\": {\r\n        \"idCliente\": 1,\r\n        \"nome\": \"Gil\",\r\n        \"email\": \"gilialdo@gmail.com\"\r\n    },\r\n    \"idProduto\": \"teste2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/produtoFavorito_/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produtoFavorito_",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar produtoFavorito api",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBtYWdhbHUuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJ1c3VhcmlvIiwiZXhwIjoxNjM0MDgxOTQ2LCJhdXRob3JpdGllcyI6WyJST0xFX1BST0RVVE9GQVZPUklUT19DUklBUiIsIlJPTEVfUFJPRFVUT19BVFVBTElaQVIiLCJST0xFX1BFUk1JU1NBT19MSVNUQVIiLCJST0xFX1BST0RVVE9fTElTVEFSIiwiUk9MRV9VU1VBUklPX0NSSUFSIiwiUk9MRV9QRVJNSVNTQU9VU1VBUklPX0NSSUFSIiwiUk9MRV9QRVJNSVNTQU9fREVMRVRBUiIsIlJPTEVfVVNVQVJJT19ERUxFVEFSIiwiUk9MRV9QUk9EVVRPRkFWT1JJVE9fTElTVEFSIiwiUk9MRV9VU1VBUklPX0xJU1RBUiIsIlJPTEVfQ0xJRU5URV9BVFVBTElaQVIiLCJST0xFX0NMSUVOVEVfTElTVEFSIiwiUk9MRV9QRVJNSVNTQU9fQ1JJQVIiLCJST0xFX0NMSUVOVEVfQ1JJQVIiLCJST0xFX1BFUk1JU1NBT1VTVUFSSU9fQVRVQUxJWkFSIiwiUk9MRV9QUk9EVVRPX0NSSUFSIiwiUk9MRV9VU1VBUklPX0FUVUFMSVpBUiIsIlJPTEVfUEVSTUlTU0FPX0FUVUFMSVpBUiIsIlJPTEVfUFJPRFVUT19ERUxFVEFSIiwiUk9MRV9QRVJNSVNTQU9VU1VBUklPX0RFTEVUQVIiLCJST0xFX0NMSUVOVEVfREVMRVRBUiIsIlJPTEVfUFJPRFVUT0ZBVk9SSVRPX0FUVUFMSVpBUiIsIlJPTEVfUEVSTUlTU0FPVVNVQVJJT19MSVNUQVIiLCJST0xFX1BST0RVVE9GQVZPUklUT19ERUxFVEFSIl0sImp0aSI6IjAyMGM4MGM1LTAwZjctNDQ2ZS05OTU1LTQzYjgzNjMyYWIwMyIsImNsaWVudF9pZCI6ImFuZ3VsYXIifQ.L---N2SjAEpbSfFcFHBHSoNeml6X2C-y9QuPUw5qczU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/produto_",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produto_"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "produto",
+			"item": [
+				{
+					"name": "listar produto api",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBtYWdhbHUuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJ1c3VhcmlvIiwiZXhwIjoxNjM0MDgzNjk4LCJhdXRob3JpdGllcyI6WyJST0xFX1BST0RVVE9GQVZPUklUT19DUklBUiIsIlJPTEVfUFJPRFVUT19BVFVBTElaQVIiLCJST0xFX1BFUk1JU1NBT19MSVNUQVIiLCJST0xFX1BST0RVVE9fTElTVEFSIiwiUk9MRV9VU1VBUklPX0NSSUFSIiwiUk9MRV9QRVJNSVNTQU9VU1VBUklPX0NSSUFSIiwiUk9MRV9QRVJNSVNTQU9fREVMRVRBUiIsIlJPTEVfVVNVQVJJT19ERUxFVEFSIiwiUk9MRV9QUk9EVVRPRkFWT1JJVE9fTElTVEFSIiwiUk9MRV9VU1VBUklPX0xJU1RBUiIsIlJPTEVfQ0xJRU5URV9BVFVBTElaQVIiLCJST0xFX0NMSUVOVEVfTElTVEFSIiwiUk9MRV9QRVJNSVNTQU9fQ1JJQVIiLCJST0xFX0NMSUVOVEVfQ1JJQVIiLCJST0xFX1BFUk1JU1NBT1VTVUFSSU9fQVRVQUxJWkFSIiwiUk9MRV9QUk9EVVRPX0NSSUFSIiwiUk9MRV9VU1VBUklPX0FUVUFMSVpBUiIsIlJPTEVfUEVSTUlTU0FPX0FUVUFMSVpBUiIsIlJPTEVfUFJPRFVUT19ERUxFVEFSIiwiUk9MRV9QRVJNSVNTQU9VU1VBUklPX0RFTEVUQVIiLCJST0xFX0NMSUVOVEVfREVMRVRBUiIsIlJPTEVfUFJPRFVUT0ZBVk9SSVRPX0FUVUFMSVpBUiIsIlJPTEVfUEVSTUlTU0FPVVNVQVJJT19MSVNUQVIiLCJST0xFX1BST0RVVE9GQVZPUklUT19ERUxFVEFSIl0sImp0aSI6ImJlOTZhMmNjLWIyZTYtNDhmYS1hMTgyLTgyM2YzYWQwYTExZiIsImNsaWVudF9pZCI6ImFuZ3VsYXIifQ.yaU-LO7OEtpgwaea-YAi_irWHZNRY_6Gj5HbcOsMebI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/produto_",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produto_"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar produto pagina api",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBtYWdhbHUuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJ1c3VhcmlvIiwiZXhwIjoxNjM0MDgzNjk4LCJhdXRob3JpdGllcyI6WyJST0xFX1BST0RVVE9GQVZPUklUT19DUklBUiIsIlJPTEVfUFJPRFVUT19BVFVBTElaQVIiLCJST0xFX1BFUk1JU1NBT19MSVNUQVIiLCJST0xFX1BST0RVVE9fTElTVEFSIiwiUk9MRV9VU1VBUklPX0NSSUFSIiwiUk9MRV9QRVJNSVNTQU9VU1VBUklPX0NSSUFSIiwiUk9MRV9QRVJNSVNTQU9fREVMRVRBUiIsIlJPTEVfVVNVQVJJT19ERUxFVEFSIiwiUk9MRV9QUk9EVVRPRkFWT1JJVE9fTElTVEFSIiwiUk9MRV9VU1VBUklPX0xJU1RBUiIsIlJPTEVfQ0xJRU5URV9BVFVBTElaQVIiLCJST0xFX0NMSUVOVEVfTElTVEFSIiwiUk9MRV9QRVJNSVNTQU9fQ1JJQVIiLCJST0xFX0NMSUVOVEVfQ1JJQVIiLCJST0xFX1BFUk1JU1NBT1VTVUFSSU9fQVRVQUxJWkFSIiwiUk9MRV9QUk9EVVRPX0NSSUFSIiwiUk9MRV9VU1VBUklPX0FUVUFMSVpBUiIsIlJPTEVfUEVSTUlTU0FPX0FUVUFMSVpBUiIsIlJPTEVfUFJPRFVUT19ERUxFVEFSIiwiUk9MRV9QRVJNSVNTQU9VU1VBUklPX0RFTEVUQVIiLCJST0xFX0NMSUVOVEVfREVMRVRBUiIsIlJPTEVfUFJPRFVUT0ZBVk9SSVRPX0FUVUFMSVpBUiIsIlJPTEVfUEVSTUlTU0FPVVNVQVJJT19MSVNUQVIiLCJST0xFX1BST0RVVE9GQVZPUklUT19ERUxFVEFSIl0sImp0aSI6ImJlOTZhMmNjLWIyZTYtNDhmYS1hMTgyLTgyM2YzYWQwYTExZiIsImNsaWVudF9pZCI6ImFuZ3VsYXIifQ.yaU-LO7OEtpgwaea-YAi_irWHZNRY_6Gj5HbcOsMebI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/produto_/pagina/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produto_",
+								"pagina",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "chamada token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "@ngul@r0",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "angular",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "admin@algamoney.com",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "admin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "grant_type",
+						"value": "password",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin@magalu.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/oauth/token",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

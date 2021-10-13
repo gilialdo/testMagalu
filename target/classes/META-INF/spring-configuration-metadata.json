@@ -1,0 +1,75 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "br.com.magalutest.api.config.property.MagaluApiProperty",
+      "name": "magalu",
+      "type": "br.com.magalutest.api.config.property.MagaluApiProperty"
+    },
+    {
+      "sourceType": "br.com.magalutest.api.config.property.MagaluApiProperty",
+      "name": "magalu.mail",
+      "sourceMethod": "public br.com.magalutest.api.config.property.MagaluApiProperty.Mail getMail() ",
+      "type": "br.com.magalutest.api.config.property.MagaluApiProperty$Mail"
+    },
+    {
+      "sourceType": "br.com.magalutest.api.config.property.MagaluApiProperty",
+      "name": "magalu.s3",
+      "sourceMethod": "public br.com.magalutest.api.config.property.MagaluApiProperty.S3 getS3() ",
+      "type": "br.com.magalutest.api.config.property.MagaluApiProperty$S3"
+    },
+    {
+      "sourceType": "br.com.magalutest.api.config.property.MagaluApiProperty",
+      "name": "magalu.seguranca",
+      "sourceMethod": "public br.com.magalutest.api.config.property.MagaluApiProperty.Seguranca getSeguranca() ",
+      "type": "br.com.magalutest.api.config.property.MagaluApiProperty$Seguranca"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "br.com.magalutest.api.config.property.MagaluApiProperty$Mail",
+      "name": "magalu.mail.host",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "br.com.magalutest.api.config.property.MagaluApiProperty$Mail",
+      "name": "magalu.mail.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "br.com.magalutest.api.config.property.MagaluApiProperty$Mail",
+      "name": "magalu.mail.port",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "br.com.magalutest.api.config.property.MagaluApiProperty$Mail",
+      "name": "magalu.mail.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "br.com.magalutest.api.config.property.MagaluApiProperty",
+      "name": "magalu.origin-permitida",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "br.com.magalutest.api.config.property.MagaluApiProperty$S3",
+      "name": "magalu.s3.access-key-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "br.com.magalutest.api.config.property.MagaluApiProperty$S3",
+      "name": "magalu.s3.bucket",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "br.com.magalutest.api.config.property.MagaluApiProperty$S3",
+      "name": "magalu.s3.secret-access-key",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "br.com.magalutest.api.config.property.MagaluApiProperty$Seguranca",
+      "name": "magalu.seguranca.enable-https",
+      "type": "java.lang.Boolean"
+    }
+  ]
+}
