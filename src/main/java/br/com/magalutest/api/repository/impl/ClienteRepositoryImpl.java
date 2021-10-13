@@ -14,11 +14,9 @@ import javax.persistence.criteria.Root;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
-import org.springframework.util.StringUtils;
 
 import br.com.magalutest.api.repository.querys.ClienteRepositoryQuery;
 import br.com.magalutest.api.model.Cliente;
-import br.com.magalutest.api.model.abstracts.ClienteAbstractJPA;
 import br.com.magalutest.api.repository.filter.ClienteFilter;
 
 public class ClienteRepositoryImpl implements ClienteRepositoryQuery {

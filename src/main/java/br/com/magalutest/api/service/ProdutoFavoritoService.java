@@ -1,6 +1,5 @@
 package br.com.magalutest.api.service;
 
-import java.util.Optional;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -14,11 +14,9 @@ import javax.persistence.criteria.Root;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
-import org.springframework.util.StringUtils;
 
 import br.com.magalutest.api.repository.querys.UsuarioRepositoryQuery;
 import br.com.magalutest.api.model.Usuario;
-import br.com.magalutest.api.model.abstracts.UsuarioAbstractJPA;
 import br.com.magalutest.api.repository.filter.UsuarioFilter;
 
 public class UsuarioRepositoryImpl implements UsuarioRepositoryQuery {

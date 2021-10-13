@@ -14,11 +14,9 @@ import javax.persistence.criteria.Root;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
-import org.springframework.util.StringUtils;
 
 import br.com.magalutest.api.repository.querys.PermissaoRepositoryQuery;
 import br.com.magalutest.api.model.Permissao;
-import br.com.magalutest.api.model.abstracts.PermissaoAbstractJPA;
 import br.com.magalutest.api.repository.filter.PermissaoFilter;
 
 public class PermissaoRepositoryImpl implements PermissaoRepositoryQuery {

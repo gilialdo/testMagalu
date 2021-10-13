@@ -18,7 +18,6 @@ import org.springframework.util.StringUtils;
 
 import br.com.magalutest.api.repository.querys.ProdutoFavoritoRepositoryQuery;
 import br.com.magalutest.api.model.ProdutoFavorito;
-import br.com.magalutest.api.model.abstracts.ProdutoFavoritoAbstractJPA;
 import br.com.magalutest.api.repository.filter.ProdutoFavoritoFilter;
 
 public class ProdutoFavoritoRepositoryImpl implements ProdutoFavoritoRepositoryQuery {
